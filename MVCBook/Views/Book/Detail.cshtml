@@ -1,0 +1,60 @@
+﻿@model MVCBook.Models.Book
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detail</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Book Detail</legend>
+        <div>
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Name)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Author)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Author)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.PagesNumber)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.PagesNumber)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Publisher)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Publisher)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.PublicationDate)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.PublicationDate)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Content)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Content)
+        </div>
+        <div>
+            @Html.DisplayNameFor(model => model.Price)
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Price)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Back to List", "Index", "Book")
+    </p>
+</body>
+</html>
